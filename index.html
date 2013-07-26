@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="modernizr.js"></script>
+</head>
+<body>
+	<input type="button" value="validar audio" onclick="validaaudio()">
+	<input type="button" value="validar video" onclick="validavideo()">
+	<input type="button" value="validar canvas" onclick="validacanvas()">
+
+	<script type="text/javascript">
+		function validaaudio(){
+			if (Modernizr.audio){
+				alert('Seu navagador tem suporte para aúdio.')
+			}else{
+				alert('Seu navagador não tem suporte para aúdio, por favor autalize')
+			}
+		}
+		function validavideo(){
+			if (Modernizr.audio){
+				alert('Seu navagador tem suporte para video.')
+			}else{
+				alert('Seu navagador não tem suporte para video, por favor autalize')
+			}
+		}
+		function validacanvas(){
+			if (Modernizr.canvas){
+				alert('Seu navagador tem suporte para canvas.')
+			}else{
+				alert('Seu navagador não tem suporte para canvas, por favor autalize')
+			}
+		}
+	</script>
+</body>
+</html>
